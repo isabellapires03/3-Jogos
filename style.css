@@ -1,24 +1,47 @@
 body{
     background-image:url(Fundo.png);
-    background-size:auto;
     background-color: powderblue;
-    align-items: center;
+    background-size:cover;
+    align-content: end;
+    justify-content: center;
+    
 }
-
+.main{
+    display:flex;
+    height:fit-content;
+    width:fit-content;
+    align-content: flex-end;
+    justify-content: center;
+}
 footer{
+    display:flex;
     background-color: blue;
     width: max;
     height: 150px;
+    margin-top:20px;
+    align-items:anchor-center;
+    justify-content: center;
 }
 
 h1{
-    font-family: Pixelfy Sans;
+    margin:30px;
+    font-family: Pixelify Sans;
     color: aliceblue;    
 }
+
+h2{
+    margin:30px;
+    font-family: Pixelify Sans;
+    color: aliceblue; 
+}
 .pasta{
-    align-items: center;
+    display:flex;
+    align-items:center;
+    margin:20px;
     background-color: blue;
     width: 500px;
     height: 375px;
     border-radius: 5px;
+    justify-content: center;
 }
+
