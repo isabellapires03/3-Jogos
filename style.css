@@ -5,9 +5,19 @@ body{
     align-items: center;
 }
 
+footer{
+    background-color: blue;
+    width: max;
+    height: 150px;
+}
+
+h1{
+    font-family: Pixelfy Sans;
+    color: aliceblue;    
+}
 .pasta{
     align-items: center;
-    background-color: #f6ba1e;
+    background-color: blue;
     width: 500px;
     height: 375px;
     border-radius: 5px;
