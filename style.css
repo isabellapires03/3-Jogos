@@ -1,6 +1,14 @@
+body{
+    background-image:url(Fundo.png);
+    background-size: cover;
+    background-color: powderblue;
+    align-items: center;
+}
+
 .pasta{
+    align-items: center;
     background-color: #f6ba1e;
     width: 500px;
     height: 375px;
-    border-radius: 5%;
+    border-radius: 5px;
 }
