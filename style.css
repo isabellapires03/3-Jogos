@@ -1,6 +1,6 @@
 body{
     background-image:url(Fundo.png);
-    background-size: cover;
+    background-size:auto;
     background-color: powderblue;
     align-items: center;
 }
