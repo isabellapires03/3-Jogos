@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Jogos</title>
+    <title>Trabalho - 3 Funções</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <h1>Olá!</h1>
 </head>
-<style></style>
 <body>
-    <main>
-       
-        <h1 id="ola"></h1>
-        <div class="pasta">
-            <h1>Jogo I</h1>
-            <p>Informe uma frase:</p>
-            <input type="text" id="nome" placeholder="Informe seu nome!">
-            <span onclick="addElemento()" class="addBtn">Incluir</span>
-        </div>
 
-        <div class="pasta">
-            <h1>Jogo I</h1>
-            <p>Informe seu nome:</p>
-            <input type="text" id="nome" placeholder="Digite seu nome!">
-            <button onclick="dizerOla()">Incluir</button>
-        </div>
+    <div class="pasta">
+        <h2>Informe seu nome</h2>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <button onclick="saudarUsuario()">Enviar</button>
+        <p id="demo">Olá!</p>
+    </div>
 
+    <div class="pasta">
+        <h2>Adivinhe o número secreto</h2>
+        <button onclick="gerarNumeroSecreto()">Gerar número secreto</button>
+        <p id="aviso">Número secreto gerado!</p>
+    </div>
+
+    <div class="pasta">
+        <h2>Dê um chute!</h2>
+        <input type="number" id="chute" placeholder="Digite um número entre 0 e 9999">
+        <button onclick="tentarAdivinhar()">Verificar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
-<script src="script.js"></script>
-<footer><h2>Feito por Isabella - 2025</h2></footer>
 </html>
