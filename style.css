@@ -1,12 +1,14 @@
 body{
+    display:flex;
     width: 1024px;
     height: 768px;
     background-image:url(Fundo.png);
     background-color: powderblue;
     background-size:cover;
-    align-content: end;
+    align-content: center;
     justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
 .main{
     height: max-content;
@@ -16,33 +18,60 @@ body{
     justify-content: center;
 }
 footer{
-    display:flex;
-    background-color: blue;
-    height: 70px;
-    margin-top:20px;
-    align-items: flex-end;
+    display: initial;
+   
+    height: 12px;
+    align-items:normal;
     justify-content: end;
+    align-content: center;
 }
 
 h1{
-    margin:30px;
+    margin:10px;
     font-family: Pixelify Sans;
     color: aliceblue;    
 }
 
 h2{
+    margin:20px;
+    padding: 14px;
+    font-size: 12px;
+    font-family: Pixelify Sans;
+    color: aliceblue;
+}
+.pasta{
+    font-family: Pixelify Sans;
+    font-size:15px;
+    line-height: 0.8;
+    display:flex;
+    align-items:center;
     margin:30px;
+    background-color: blue;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content:center;
+}
+
+p{
+    margin:20px;
+    padding: 14px;
+    font-size: 16px;
     font-family: Pixelify Sans;
     color: aliceblue; 
 }
-.pasta{
-    display:flex;
-    align-items:center;
-    margin:20px;
-    background-color: blue;
-    width: 250px;
-    height: 375px;
-    border-radius: 5px;
-    justify-content: center;
+.botao{
+    width: 200px;
+    height:30px;
+    margin: 10px;
+    font-family: Pixelify Sans;
+    color: blue;
 }
-

@@ -1,33 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="pt-BR"><head>
     <meta charset="UTF-8">
-    <title>Trabalho - 3 Funções</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Jogos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1 id="ola">Olá!</h1>
 
-    <div class="pasta">
-        <h2>Informe seu nome</h2>
-        <input type="text" id="nome" placeholder="Digite seu nome">
-        <button onclick="saudarUsuario()">Enviar</button>
-        <p id="demo">Olá!</p>
-    </div>
+    <main class="main">
+    <div class="container">
+        <div class="pasta">
+            <h1>Qual seu nome:</h1>
+            <p>Informe seu nome:</p>
+            <input type="text" id="nome" placeholder="Digite seu nome!">
+            <button class="botao" onclick="dizerOla()">OK!</button>
+        </div>
 
-    <div class="pasta">
-        <h2>Adivinhe o número secreto</h2>
-        <button onclick="gerarNumeroSecreto()">Gerar número secreto</button>
-        <p id="aviso">Número secreto gerado!</p>
-    </div>
+        <div class="pasta">
+            <h1>Adivinhe o número secreto:</h1>
+            <p>Digite um número entre 0 e 9999:</p>
+            <input type="number" id="chute" placeholder="Seu chute">
+            <button class="botao" onclick="registrarNumero">Chutar!</button>
+            <p id="resultado"></p>
+        </div>
 
-    <div class="pasta">
-        <h2>Dê um chute!</h2>
-        <input type="number" id="chute" placeholder="Digite um número entre 0 e 9999">
-        <button onclick="tentarAdivinhar()">Verificar</button>
-        <p id="resultado"></p>
-    </div>
+        <div class="pasta">
+            <h1>Somar:</h1>
+            <p>Quer uma dica? Confira a soma do número secreto + o valor que você digitou!</p>
+            
+            <button class="botao" onclick="executarSoma()">Somar</button>
+            <h1 id="resultado"></h1>
+        </div>
+    </div> 
+    </main>
+
+    <footer>
+        <h2>Feito por Isabella - 2025</h2>
+    </footer>
 
     <script src="script.js"></script>
 
-</body>
-</html>
+
+</body></html>
