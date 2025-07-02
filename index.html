@@ -8,25 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.4/bootbox.min.js" integrity="sha512-l9O8NTlhknUJDJQlUVeavXJrtGEEYma4O29lRjEV7mO6DxXVvX9SWEIfnAlpnf+2T8LHTfsVuzttCDEMpIyaew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <h1>Olá!</h1>
 </head>
 <style></style>
 <body>
     <main>
-        <h1>Olá!</h1>
+       
+        <h1 id="ola"></h1>
         <div class="pasta">
             <h1>Jogo I</h1>
+            <p>Informe uma frase:</p>
+            <input type="text" id="nome" placeholder="Informe seu nome!">
+            <span onclick="addElemento()" class="addBtn">Incluir</span>
+        </div>
+
+        <div class="pasta">
+            <h1>Jogo I</h1>
+            <p>Informe seu nome:</p>
+            <input type="text" id="nome" placeholder="Digite seu nome!">
+            <button onclick="dizerOla()">Incluir</button>
         </div>
 
 
-
-
-
-
-
-
-    </main>
 </body>
+<script src="script.js"></script>
 <footer><h2>Feito por Isabella - 2025</h2></footer>
 </html>

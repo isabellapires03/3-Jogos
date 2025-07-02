@@ -3,11 +3,11 @@ const max = 9999;
 let chute;
 let soma;
 let numero;
-let nome = prompt("Digite o seu nome");
-console.log(nome);
-document.querySelector('#header').innerHTML = 'Olá, ' + nome + '!'
-
-
+let nome = document.getElementById("nome");
+ola = document.getElementById("demo");
+ola.textContent = "Olá, " + nome + "!";
+entrada.addEventListener('input', () => {
+let texto = entrada.value;
 
 
 function getRandomIntInclusive(min, max) {
