@@ -1,44 +1,48 @@
-const min = 0;
-const max = 9999;
-let numeroSecreto = null;
 
+    const min = 0;
+    const max = 9999;
+    let numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min;
 
-function saudarUsuario() {
-    const nome = document.getElementById("nome").value;
-    const demo = document.getElementById("demo");
+    // 1. Mostrar saudação
+    function dizerOla() {
+      const nome = document.getElementById("nome").value;
+      const ola = document.getElementById("ola");
 
-    if (nome.trim() === "") {
-        demo.textContent = "Por favor, digite seu nome.";
-    } else {
-        demo.textContent = "Olá, " + nome + "!";
+      if (nome === "") {
+        ola.textContent = "Por favor, digite seu nome.";
+      } else {
+        ola.textContent = "Olá, " + nome + "!";
+      }
     }
-}
 
-function gerarNumeroSecreto() {
-    numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min;
-    document.getElementById("aviso").textContent = "Número secreto gerado com sucesso!";
-    console.log("Número secreto:", numeroSecreto); // apenas para testes
-}
+    // 2. Verificar chute do usuário
+    function registrarNumero() {
+      const chute = parseInt(document.getElementById("chute").value);
+      const resposta = document.getElementById("respostaChute");
 
-
-function tentarAdivinhar() {
-    const chute = parseInt(document.getElementById("chute").value);
-    const resultado = document.getElementById("resultado");
-
-    if (isNaN(chute) || chute < min || chute > max) {
-        resultado.textContent = "Número inválido. Digite entre 0 e 9999.";
+      if (isNaN(chute) || chute < min || chute > max) {
+        resposta.textContent = "Número inválido. Digite entre 0 e 9999.";
         return;
+      }
+
+      if (chute === numeroSecreto) {
+        resposta.textContent = "Parabéns! Você acertou o número secreto!";
+      } else {
+        resposta.textContent = "Você errou. Tente novamente!";
+      }
     }
 
-    if (numeroSecreto === null) {
-        resultado.textContent = "Gere o número secreto antes de chutar!";
+    // 3. Mostrar a soma como dica
+    function executarSoma() {
+      const chute = parseInt(document.getElementById("chute").value);
+      const resposta = document.getElementById("respostaSoma");
+
+      if (isNaN(chute) || chute < min || chute > max) {
+        resposta.textContent = "Digite um número válido antes de somar.";
         return;
+      }
+
+      const soma = chute + numeroSecreto;
+      resposta.textContent = "Dica: seu chute + número secreto = " + soma;
     }
 
-    if (chute === numeroSecreto) {
-        resultado.textContent = "Parabéns! Você acertou o número secreto!";
-    } else {
-        const dica = chute + numeroSecreto;
-        resultado.textContent = `Você errou! Dica: a soma do seu chute com o número secreto é ${dica}.`;
-    }
-}
